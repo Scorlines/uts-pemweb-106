@@ -12,8 +12,8 @@ Aplikasi web perpustakaan buku yang dibangun menggunakan ReactJS dan Vite. Aplik
 - 🎯 Filter buku berdasarkan subjek (Fiksi, Sains, Sejarah, dll)
 - 📚 Daftar bacaan pribadi dengan localStorage
 - 📱 Tampilan responsif untuk semua perangkat
-- � Tema dark mode yang elegan
-- �🎨 Background perpustakaan yang aesthetic
+-    Tema dark mode yang elegan
+-    Background perpustakaan yang aesthetic
 
 ## 🚀 Cara Instalasi dan Menjalankan
 
