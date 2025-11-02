@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <!-- Sky Background -->
+  <rect width="800" height="400" fill="#87CEEB"/>
+  
+  <!-- Floor -->
+  <rect y="400" width="800" height="200" fill="#C19A6B"/>
+  
+  <!-- Left Bookshelf -->
+  <g id="left-shelf">
+    <!-- Shelf frame -->
+    <rect x="20" y="100" width="200" height="300" fill="#654321" stroke="#4A3518" stroke-width="3"/>
+    
+    <!-- Shelves -->
+    <rect x="20" y="180" width="200" height="8" fill="#4A3518"/>
+    <rect x="20" y="260" width="200" height="8" fill="#4A3518"/>
+    <rect x="20" y="340" width="200" height="8" fill="#4A3518"/>
+    
+    <!-- Books Row 1 -->
+    <rect x="30" y="110" width="25" height="65" fill="#FF6B6B"/>
+    <rect x="58" y="110" width="20" height="65" fill="#4ECDC4"/>
+    <rect x="81" y="110" width="28" height="65" fill="#FFE66D"/>
+    <rect x="112" y="110" width="22" height="65" fill="#95E1D3"/>
+    <rect x="137" y="110" width="26" height="65" fill="#F38181"/>
+    <rect x="166" y="110" width="24" height="65" fill="#AA96DA"/>
+    <rect x="193" y="110" width="20" height="65" fill="#FCBAD3"/>
+    
+    <!-- Books Row 2 -->
+    <rect x="30" y="190" width="22" height="65" fill="#A8E6CF"/>
+    <rect x="55" y="190" width="26" height="65" fill="#FFD3B6"/>
+    <rect x="84" y="190" width="20" height="65" fill="#FFAAA5"/>
+    <rect x="107" y="190" width="28" height="65" fill="#FF8B94"/>
+    <rect x="138" y="190" width="23" height="65" fill="#C7CEEA"/>
+    <rect x="164" y="190" width="25" height="65" fill="#B4F8C8"/>
+    <rect x="192" y="190" width="21" height="65" fill="#FBE7C6"/>
+    
+    <!-- Books Row 3 -->
+    <rect x="30" y="270" width="24" height="65" fill="#6C5CE7"/>
+    <rect x="57" y="270" width="21" height="65" fill="#00B894"/>
+    <rect x="81" y="270" width="27" height="65" fill="#FDCB6E"/>
+    <rect x="111" y="270" width="23" height="65" fill="#E17055"/>
+    <rect x="137" y="270" width="26" height="65" fill="#74B9FF"/>
+    <rect x="166" y="270" width="22" height="65" fill="#A29BFE"/>
+    <rect x="191" y="270" width="22" height="65" fill="#FD79A8"/>
+    
+    <!-- Books Row 4 -->
+    <rect x="30" y="350" width="26" height="45" fill="#55EFC4"/>
+    <rect x="59" y="350" width="20" height="45" fill="#FF7675"/>
+    <rect x="82" y="350" width="25" height="45" fill="#81ECEC"/>
+    <rect x="110" y="350" width="22" height="45" fill="#FAB1A0"/>
+    <rect x="135" y="350" width="24" height="45" fill="#DFE6E9"/>
+    <rect x="162" y="350" width="27" height="45" fill="#00CEC9"/>
+    <rect x="192" y="350" width="21" height="45" fill="#D63031"/>
+  </g>
+  
+  <!-- Left-Center Bookshelf -->
+  <g id="left-center-shelf">
+    <rect x="240" y="100" width="180" height="300" fill="#654321" stroke="#4A3518" stroke-width="3"/>
+    <rect x="240" y="180" width="180" height="8" fill="#4A3518"/>
+    <rect x="240" y="260" width="180" height="8" fill="#4A3518"/>
+    <rect x="240" y="340" width="180" height="8" fill="#4A3518"/>
+    
+    <!-- Books -->
+    <rect x="250" y="110" width="24" height="65" fill="#00B894"/>
+    <rect x="277" y="110" width="20" height="65" fill="#6C5CE7"/>
+    <rect x="300" y="110" width="26" height="65" fill="#FDCB6E"/>
+    <rect x="329" y="110" width="22" height="65" fill="#E17055"/>
+    <rect x="354" y="110" width="25" height="65" fill="#74B9FF"/>
+    <rect x="382" y="110" width="23" height="65" fill="#A29BFE"/>
+    
+    <rect x="250" y="190" width="21" height="65" fill="#FF6B6B"/>
+    <rect x="274" y="190" width="25" height="65" fill="#4ECDC4"/>
+    <rect x="302" y="190" width="22" height="65" fill="#FFE66D"/>
+    <rect x="327" y="190" width="24" height="65" fill="#95E1D3"/>
+    <rect x="354" y="190" width="26" height="65" fill="#F38181"/>
+    <rect x="383" y="190" width="22" height="65" fill="#AA96DA"/>
+    
+    <rect x="250" y="270" width="23" height="65" fill="#A8E6CF"/>
+    <rect x="276" y="270" width="25" height="65" fill="#FFD3B6"/>
+    <rect x="304" y="270" width="21" height="65" fill="#FFAAA5"/>
+    <rect x="328" y="270" width="26" height="65" fill="#FF8B94"/>
+    <rect x="357" y="270" width="23" height="65" fill="#C7CEEA"/>
+    <rect x="383" y="270" width="22" height="65" fill="#B4F8C8"/>
+    
+    <rect x="250" y="350" width="25" height="45" fill="#FBE7C6"/>
+    <rect x="278" y="350" width="22" height="45" fill="#55EFC4"/>
+    <rect x="303" y="350" width="24" height="45" fill="#FF7675"/>
+    <rect x="330" y="350" width="23" height="45" fill="#81ECEC"/>
+    <rect x="356" y="350" width="26" height="45" fill="#FAB1A0"/>
+    <rect x="385" y="350" width="20" height="45" fill="#DFE6E9"/>
+  </g>
+  
+  <!-- Right-Center Bookshelf -->
+  <g id="right-center-shelf">
+    <rect x="440" y="100" width="120" height="300" fill="#654321" stroke="#4A3518" stroke-width="3"/>
+    <rect x="440" y="180" width="120" height="8" fill="#4A3518"/>
+    <rect x="440" y="260" width="120" height="8" fill="#4A3518"/>
+    <rect x="440" y="340" width="120" height="8" fill="#4A3518"/>
+    
+    <!-- Books -->
+    <rect x="448" y="110" width="20" height="65" fill="#00CEC9"/>
+    <rect x="471" y="110" width="24" height="65" fill="#D63031"/>
+    <rect x="498" y="110" width="22" height="65" fill="#FD79A8"/>
+    <rect x="523" y="110" width="25" height="65" fill="#6C5CE7"/>
+    
+    <rect x="448" y="190" width="23" height="65" fill="#00B894"/>
+    <rect x="474" y="190" width="21" height="65" fill="#FDCB6E"/>
+    <rect x="498" y="190" width="26" height="65" fill="#E17055"/>
+    <rect x="527" y="190" width="21" height="65" fill="#74B9FF"/>
+    
+    <rect x="448" y="270" width="24" height="65" fill="#A29BFE"/>
+    <rect x="475" y="270" width="22" height="65" fill="#FF6B6B"/>
+    <rect x="500" y="270" width="25" height="65" fill="#4ECDC4"/>
+    <rect x="528" y="270" width="20" height="65" fill="#FFE66D"/>
+    
+    <rect x="448" y="350" width="22" height="45" fill="#95E1D3"/>
+    <rect x="473" y="350" width="25" height="45" fill="#F38181"/>
+    <rect x="501" y="350" width="23" height="45" fill="#AA96DA"/>
+    <rect x="527" y="350" width="21" height="45" fill="#FCBAD3"/>
+  </g>
+  
+  <!-- Right Bookshelf -->
+  <g id="right-shelf">
+    <rect x="580" y="100" width="200" height="300" fill="#654321" stroke="#4A3518" stroke-width="3"/>
+    <rect x="580" y="180" width="200" height="8" fill="#4A3518"/>
+    <rect x="580" y="260" width="200" height="8" fill="#4A3518"/>
+    <rect x="580" y="340" width="200" height="8" fill="#4A3518"/>
+    
+    <!-- Books Row 1 -->
+    <rect x="590" y="110" width="24" height="65" fill="#A8E6CF"/>
+    <rect x="617" y="110" width="21" height="65" fill="#FFD3B6"/>
+    <rect x="641" y="110" width="26" height="65" fill="#FFAAA5"/>
+    <rect x="670" y="110" width="23" height="65" fill="#FF8B94"/>
+    <rect x="696" y="110" width="25" height="65" fill="#C7CEEA"/>
+    <rect x="724" y="110" width="22" height="65" fill="#B4F8C8"/>
+    <rect x="749" y="110" width="24" height="65" fill="#FBE7C6"/>
+    
+    <!-- Books Row 2 -->
+    <rect x="590" y="190" width="25" height="65" fill="#6C5CE7"/>
+    <rect x="618" y="190" width="22" height="65" fill="#00B894"/>
+    <rect x="643" y="190" width="24" height="65" fill="#FDCB6E"/>
+    <rect x="670" y="190" width="21" height="65" fill="#E17055"/>
+    <rect x="694" y="190" width="26" height="65" fill="#74B9FF"/>
+    <rect x="723" y="190" width="23" height="65" fill="#A29BFE"/>
+    <rect x="749" y="190" width="24" height="65" fill="#FD79A8"/>
+    
+    <!-- Books Row 3 -->
+    <rect x="590" y="270" width="23" height="65" fill="#FF6B6B"/>
+    <rect x="616" y="270" width="25" height="65" fill="#4ECDC4"/>
+    <rect x="644" y="270" width="21" height="65" fill="#FFE66D"/>
+    <rect x="668" y="270" width="26" height="65" fill="#95E1D3"/>
+    <rect x="697" y="270" width="22" height="65" fill="#F38181"/>
+    <rect x="722" y="270" width="25" height="65" fill="#AA96DA"/>
+    <rect x="750" y="270" width="23" height="65" fill="#FCBAD3"/>
+    
+    <!-- Books Row 4 -->
+    <rect x="590" y="350" width="22" height="45" fill="#55EFC4"/>
+    <rect x="615" y="350" width="26" height="45" fill="#FF7675"/>
+    <rect x="644" y="350" width="23" height="45" fill="#81ECEC"/>
+    <rect x="670" y="350" width="25" height="45" fill="#FAB1A0"/>
+    <rect x="698" y="350" width="21" height="45" fill="#DFE6E9"/>
+    <rect x="722" y="350" width="24" height="45" fill="#00CEC9"/>
+    <rect x="749" y="350" width="24" height="45" fill="#D63031"/>
+  </g>
+  
+  <!-- Central aisle/corridor effect -->
+  <rect x="380" y="400" width="40" height="200" fill="#D4A574"/>
+  
+  <!-- Book spine details (lines) -->
+  <g stroke="#333" stroke-width="1" opacity="0.3">
+    <!-- Add vertical lines to simulate book spines -->
+    <line x1="30" y1="110" x2="30" y2="175"/>
+    <line x1="55" y1="110" x2="55" y2="175"/>
+    <line x1="250" y1="110" x2="250" y2="175"/>
+    <line x1="590" y1="110" x2="590" y2="175"/>
+  </g>
+</svg>

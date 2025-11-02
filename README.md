@@ -4,6 +4,11 @@
 - **Nama**: Muhammad Fadhel
 - **NIM**: 123140106
 
+## 🌐 Live Demo
+🔗 **[Lihat Aplikasi Live di Vercel](https://uts-pemweb-123140106.vercel.app)**
+
+Aplikasi sudah di-deploy dan dapat diakses secara online menggunakan Vercel.
+
 ## 📖 Deskripsi Project
 Aplikasi web perpustakaan buku yang dibangun menggunakan ReactJS dan Vite. Aplikasi ini memungkinkan pengguna untuk mencari buku berdasarkan judul atau penulis menggunakan Open Library API, menampilkan detail buku lengkap, dan menyimpan buku favorit ke dalam daftar bacaan pribadi.
 
@@ -49,13 +54,6 @@ Aplikasi web perpustakaan buku yang dibangun menggunakan ReactJS dan Vite. Aplik
 npm run build
 npm run preview
 ```
-
-## 🌐 Link Deployment
-🔗 **[Live Demo - Perpustakaan Buku](https://uts-pemweb-106-3yvym5l5t-scorlines-projects.vercel.app)**
-
-Aplikasi sudah di-deploy menggunakan Vercel dan dapat diakses secara online.
-
----
 
 ## 📸 Screenshot Aplikasi
 
