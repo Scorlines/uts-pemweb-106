@@ -52,29 +52,29 @@ npm run preview
 ## 📸 Screenshot Aplikasi
 
 ### 1. Halaman Utama
-![Halaman Utama](./screenshots/screenshot-1.png)
+![Halaman Utama](./screenshots/Halaman%20Utama.png)
 
-**Penjelasan:** Tampilan awal aplikasi dengan header gradient purple-pink, form pencarian di sidebar kiri yang memungkinkan pencarian berdasarkan judul/penulis dengan filter subjek, dan section "Daftar Bacaan Saya" di bawahnya. Menggunakan tema dark mode dengan background perpustakaan yang aesthetic.
+Tampilan awal aplikasi dengan header gradient purple-pink, form pencarian di sidebar kiri, dan daftar bacaan kosong. Menggunakan tema dark mode dengan background perpustakaan yang aesthetic.
 
 ---
 
 ### 2. Hasil Pencarian Buku
-![Hasil Pencarian](./screenshots/screenshot-2.png)
+![Hasil Pencarian](./screenshots/mencari%20buku.png)
 
-**Penjelasan:** Menampilkan 50 hasil pencarian buku dalam grid layout yang responsif. Setiap card buku menampilkan cover, judul, nama penulis, tahun terbit, dan dua tombol aksi: "Lihat Detail" untuk melihat informasi lengkap dan "Tambah ke Daftar" untuk menyimpan ke reading list. Contoh pencarian: "48 laws of power".
+Menampilkan hasil pencarian buku "48 laws of power" dalam grid layout responsif. Setiap card buku menampilkan cover, judul, penulis, tahun terbit, dengan tombol "Lihat Detail" dan "Tambah ke Daftar".
 
 ---
 
 ### 3. Detail Buku (Modal)
-![Detail Buku](./screenshots/screenshot-3.png)
+![Detail Buku](./screenshots/cek%20detail%20buku.png)
 
-**Penjelasan:** Modal popup yang menampilkan informasi lengkap buku termasuk cover besar, deskripsi detail, dan subjek/kategori buku dalam bentuk tag berwarna. Modal dilengkapi dengan backdrop blur effect dan tombol untuk menambahkan buku ke daftar bacaan atau menutup modal.
+Modal popup menampilkan informasi lengkap buku termasuk cover besar, deskripsi detail, dan subjek/kategori dalam bentuk tag berwarna dengan backdrop blur effect.
 
 ---
 
 ### 4. Daftar Bacaan dengan Item
-![Daftar Bacaan](./screenshots/screenshot-4.png)
+![Daftar Bacaan](./screenshots/Tambah%20buku.png)
 
-**Penjelasan:** Sidebar "Daftar Bacaan Saya" menampilkan buku-buku yang telah disimpan pengguna. Setiap item menunjukkan thumbnail cover kecil, judul, dan penulis, dengan tombol × merah untuk menghapus dari daftar. Data disimpan di localStorage sehingga tetap tersimpan meskipun browser ditutup.
+Sidebar "Daftar Bacaan Saya" menampilkan buku yang telah disimpan dengan thumbnail cover, judul, penulis, dan tombol hapus (×). Data tersimpan di localStorage.
 
 ---
