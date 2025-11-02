@@ -6,6 +6,21 @@ const SearchForm = ({ onSearch, searchParams, setSearchParams }) => {
     'fantasy', 'romance', 'mystery', 'children', 'art', 'philosophy'
   ];
 
+  const subjectLabels = {
+    '': 'Semua Subjek',
+    'fiction': 'Fiksi',
+    'science': 'Sains',
+    'history': 'Sejarah',
+    'biography': 'Biografi',
+    'computer': 'Komputer',
+    'fantasy': 'Fantasi',
+    'romance': 'Roman',
+    'mystery': 'Misteri',
+    'children': 'Anak-anak',
+    'art': 'Seni',
+    'philosophy': 'Filsafat'
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (searchParams.query.trim()) {
@@ -22,36 +37,36 @@ const SearchForm = ({ onSearch, searchParams, setSearchParams }) => {
 
   return (
     <div className="search-form">
-      <h2>Search Books</h2>
+      <h2>Cari Buku</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="searchBy">Search By:</label>
+          <label htmlFor="searchBy">Cari Berdasarkan:</label>
           <select 
             id="searchBy"
             value={searchParams.searchBy}
             onChange={(e) => handleInputChange('searchBy', e.target.value)}
             className="form-select"
           >
-            <option value="title">Title</option>
-            <option value="author">Author</option>
+            <option value="title">Judul</option>
+            <option value="author">Penulis</option>
           </select>
         </div>
 
         <div className="form-group">
-          <label htmlFor="query">Search Query:</label>
+          <label htmlFor="query">Kata Kunci Pencarian:</label>
           <input
             type="text"
             id="query"
             value={searchParams.query}
             onChange={(e) => handleInputChange('query', e.target.value)}
-            placeholder={`Enter book ${searchParams.searchBy}`}
+            placeholder={`Masukkan ${searchParams.searchBy === 'title' ? 'judul' : 'penulis'} buku`}
             className="form-input"
             required
           />
         </div>
 
         <div className="form-group">
-          <label htmlFor="subject">Filter by Subject:</label>
+          <label htmlFor="subject">Filter berdasarkan Subjek:</label>
           <select 
             id="subject"
             value={searchParams.subject}
@@ -60,14 +75,14 @@ const SearchForm = ({ onSearch, searchParams, setSearchParams }) => {
           >
             {subjects.map(subject => (
               <option key={subject} value={subject}>
-                {subject || 'All Subjects'}
+                {subjectLabels[subject]}
               </option>
             ))}
           </select>
         </div>
 
         <button type="submit" className="search-button">
-          Search Books
+          Cari Buku
         </button>
       </form>
     </div>

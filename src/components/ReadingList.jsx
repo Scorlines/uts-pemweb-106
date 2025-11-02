@@ -3,10 +3,10 @@ import React from 'react';
 const ReadingList = ({ readingList, onRemove, onBookSelect }) => {
   return (
     <div className="reading-list">
-      <h2>My Reading List ({readingList.length})</h2>
+      <h2>Daftar Bacaan Saya ({readingList.length})</h2>
       
       {readingList.length === 0 ? (
-        <p className="empty-list">Your reading list is empty.</p>
+        <p className="empty-list">Daftar bacaan Anda masih kosong.</p>
       ) : (
         <div className="reading-list-items">
           {readingList.map(book => (
@@ -21,7 +21,7 @@ const ReadingList = ({ readingList, onRemove, onBookSelect }) => {
                     alt={book.title}
                   />
                 ) : (
-                  <div className="no-cover-small">No Cover</div>
+                  <div className="no-cover-small">Tidak Ada Sampul</div>
                 )}
               </div>
               
@@ -37,7 +37,7 @@ const ReadingList = ({ readingList, onRemove, onBookSelect }) => {
               <button 
                 onClick={() => onRemove(book.key)}
                 className="remove-button"
-                title="Remove from list"
+                title="Hapus dari daftar"
               >
                 ×
               </button>

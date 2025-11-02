@@ -54,8 +54,8 @@ function App() {
       const booksWithDetails = data.docs.slice(0, 50).map(book => ({
         key: book.key,
         title: book.title,
-        author_name: book.author_name ? book.author_name[0] : 'Unknown Author',
-        first_publish_year: book.first_publish_year || 'Unknown',
+        author_name: book.author_name ? book.author_name[0] : 'Penulis Tidak Diketahui',
+        first_publish_year: book.first_publish_year || 'Tidak Diketahui',
         isbn: book.isbn ? book.isbn[0] : null,
         cover_id: book.cover_i,
         subject: book.subject ? book.subject.slice(0, 5) : []
@@ -63,7 +63,7 @@ function App() {
       
       setBooks(booksWithDetails);
     } catch (err) {
-      setError('Error fetching books: ' + err.message);
+      setError('Kesalahan dalam mengambil data buku: ' + err.message);
     } finally {
       setLoading(false);
     }
@@ -86,7 +86,7 @@ function App() {
     const detailedBook = await getBookDetails(book.key);
     setSelectedBook({
       ...book,
-      description: detailedBook?.description || 'No description available',
+      description: detailedBook?.description || 'Tidak ada deskripsi tersedia',
       full_subjects: detailedBook?.subjects || []
     });
   };
@@ -121,7 +121,7 @@ function App() {
         </div>
         
         <div className="content">
-          {loading && <div className="loading">Loading books...</div>}
+          {loading && <div className="loading">Memuat buku...</div>}
           {error && <div className="error">{error}</div>}
           
           <BookTable 

@@ -14,27 +14,27 @@ const BookDetail = ({ book, onClose, onAddToReadingList, isInReadingList }) => {
                 alt={book.title}
               />
             ) : (
-              <div className="no-cover-large">No Cover Available</div>
+              <div className="no-cover-large">Tidak Ada Sampul Tersedia</div>
             )}
           </div>
           
           <div className="detail-info">
             <h2>{book.title}</h2>
-            <p className="detail-author">by {book.author_name}</p>
-            <p className="detail-year">First published: {book.first_publish_year}</p>
+            <p className="detail-author">oleh {book.author_name}</p>
+            <p className="detail-year">Pertama kali diterbitkan: {book.first_publish_year}</p>
             
             <div className="detail-description">
-              <h3>Description</h3>
+              <h3>Deskripsi</h3>
               <p>
                 {typeof book.description === 'string' 
                   ? book.description 
-                  : book.description?.value || 'No description available'}
+                  : book.description?.value || 'Tidak ada deskripsi tersedia'}
               </p>
             </div>
             
             {book.full_subjects && book.full_subjects.length > 0 && (
               <div className="detail-subjects">
-                <h3>Subjects</h3>
+                <h3>Subjek</h3>
                 <div className="subjects-list">
                   {book.full_subjects.slice(0, 10).map((subject, index) => (
                     <span key={index} className="subject-tag">{subject}</span>
@@ -49,10 +49,10 @@ const BookDetail = ({ book, onClose, onAddToReadingList, isInReadingList }) => {
                 disabled={isInReadingList}
                 className="btn btn-primary"
               >
-                {isInReadingList ? 'In Reading List' : 'Add to Reading List'}
+                {isInReadingList ? 'Sudah Ada di Daftar Baca' : 'Tambah ke Daftar Baca'}
               </button>
               <button onClick={onClose} className="btn btn-secondary">
-                Close
+                Tutup
               </button>
             </div>
           </div>

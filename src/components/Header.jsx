@@ -4,8 +4,8 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <h1 className="header-title">📚 Book Library</h1>
-        <p className="header-subtitle">Discover your next favorite book</p>
+        <h1 className="header-title">Perpustakaan Buku</h1>
+        <p className="header-subtitle">Temukan buku favorit Anda selanjutnya</p>
       </div>
     </header>
   );

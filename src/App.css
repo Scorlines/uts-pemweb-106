@@ -8,22 +8,65 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f5f5f5;
+  color: #e0e0e0;
+  background-image: url('/images/library-background.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.92);
+  z-index: -1;
+}
+
+/* Custom Scrollbar for Dark Theme */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7c3aed #1a1a1a;
 }
 
 /* Header Styles */
 .header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
   color: white;
   padding: 2rem 0;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
 }
 
 .header-title {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .header-subtitle {
@@ -51,16 +94,17 @@ body {
 
 /* Search Form Styles */
 .search-form {
-  background: white;
+  background: #1f1f1f;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  border: 1px solid #333;
 }
 
 .search-form h2 {
   margin-bottom: 1rem;
-  color: #333;
-  border-bottom: 2px solid #667eea;
+  color: #e0e0e0;
+  border-bottom: 2px solid #7c3aed;
   padding-bottom: 0.5rem;
 }
 
@@ -72,62 +116,68 @@ body {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
-  color: #555;
+  color: #b0b0b0;
 }
 
 .form-input,
 .form-select {
   width: 100%;
   padding: 0.75rem;
-  border: 2px solid #e1e1e1;
+  border: 2px solid #333;
   border-radius: 5px;
   font-size: 1rem;
+  background: #2a2a2a;
+  color: #e0e0e0;
   transition: border-color 0.3s ease;
 }
 
 .form-input:focus,
 .form-select:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #7c3aed;
+  background: #333;
 }
 
 .search-button {
   width: 100%;
   padding: 0.75rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
 }
 
 .search-button:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
 }
 
 /* Reading List Styles */
 .reading-list {
-  background: white;
+  background: #1f1f1f;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  border: 1px solid #333;
   max-height: 500px;
   overflow-y: auto;
 }
 
 .reading-list h2 {
   margin-bottom: 1rem;
-  color: #333;
-  border-bottom: 2px solid #667eea;
+  color: #e0e0e0;
+  border-bottom: 2px solid #7c3aed;
   padding-bottom: 0.5rem;
 }
 
 .empty-list {
   text-align: center;
-  color: #666;
+  color: #888;
   font-style: italic;
 }
 
@@ -142,13 +192,15 @@ body {
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem;
-  background: #f8f9fa;
+  background: #2a2a2a;
   border-radius: 8px;
-  transition: background-color 0.2s ease;
+  border: 1px solid #333;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .reading-list-item:hover {
-  background: #e9ecef;
+  background: #333;
+  border-color: #7c3aed;
 }
 
 .item-cover {
@@ -166,13 +218,14 @@ body {
 .no-cover-small {
   width: 40px;
   height: 60px;
-  background: #ddd;
+  background: #333;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
   font-size: 0.7rem;
-  color: #666;
+  color: #888;
+  border: 1px solid #444;
 }
 
 .item-info {
@@ -183,21 +236,21 @@ body {
 .item-title {
   cursor: pointer;
   margin-bottom: 0.25rem;
-  color: #333;
+  color: #e0e0e0;
   transition: color 0.2s ease;
 }
 
 .item-title:hover {
-  color: #667eea;
+  color: #a78bfa;
 }
 
 .item-author {
   font-size: 0.8rem;
-  color: #666;
+  color: #999;
 }
 
 .remove-button {
-  background: #dc3545;
+  background: #dc2626;
   color: white;
   border: none;
   border-radius: 50%;
@@ -208,30 +261,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .remove-button:hover {
-  background: #c82333;
+  background: #ef4444;
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.5);
 }
 
 /* Book Table Styles */
 .book-table {
-  background: white;
+  background: #1f1f1f;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  border: 1px solid #333;
 }
 
 .book-table.empty {
   text-align: center;
-  color: #666;
+  color: #888;
 }
 
 .book-table h2 {
   margin-bottom: 1rem;
-  color: #333;
-  border-bottom: 2px solid #667eea;
+  color: #e0e0e0;
+  border-bottom: 2px solid #7c3aed;
   padding-bottom: 0.5rem;
 }
 
@@ -242,22 +297,24 @@ body {
 }
 
 .book-card {
-  background: #f8f9fa;
+  background: #2a2a2a;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #333;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .book-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.4);
+  border-color: #7c3aed;
 }
 
 .book-cover {
   height: 200px;
   overflow: hidden;
-  background: #ddd;
+  background: #1a1a1a;
 }
 
 .book-cover img,
@@ -277,7 +334,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
   color: white;
   font-weight: 600;
   cursor: pointer;
@@ -290,18 +347,18 @@ body {
 .book-title {
   cursor: pointer;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #e0e0e0;
   font-size: 1.1rem;
   transition: color 0.2s ease;
 }
 
 .book-title:hover {
-  color: #667eea;
+  color: #a78bfa;
 }
 
 .book-author,
 .book-year {
-  color: #666;
+  color: #999;
   font-size: 0.9rem;
   margin-bottom: 0.25rem;
 }
@@ -323,26 +380,32 @@ body {
 }
 
 .btn-primary {
-  background: #667eea;
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
   color: white;
+  box-shadow: 0 2px 10px rgba(124, 58, 237, 0.3);
 }
 
 .btn-primary:hover:not(:disabled) {
-  background: #5a6fd8;
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.5);
 }
 
 .btn-primary:disabled {
-  background: #ccc;
+  background: #444;
   cursor: not-allowed;
+  box-shadow: none;
+  color: #666;
 }
 
 .btn-secondary {
-  background: #6c757d;
+  background: #374151;
   color: white;
+  border: 1px solid #4b5563;
 }
 
 .btn-secondary:hover {
-  background: #5a6268;
+  background: #4b5563;
+  border-color: #6b7280;
 }
 
 /* Modal Styles */
@@ -352,16 +415,19 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.85);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
   padding: 1rem;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .modal-content {
-  background: white;
+  background: #1f1f1f;
+  border: 1px solid #333;
   border-radius: 15px;
   max-width: 800px;
   width: 100%;
@@ -369,6 +435,7 @@ body {
   overflow-y: auto;
   position: relative;
   animation: modalAppear 0.3s ease;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.7);
 }
 
 @keyframes modalAppear {
@@ -386,7 +453,7 @@ body {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: #dc3545;
+  background: #dc2626;
   color: white;
   border: none;
   border-radius: 50%;
@@ -395,11 +462,13 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
   z-index: 10;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 10px rgba(220, 38, 38, 0.3);
 }
 
 .close-button:hover {
-  background: #c82333;
+  background: #ef4444;
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.5);
 }
 
 .book-detail {
@@ -418,7 +487,7 @@ body {
 .no-cover-large {
   width: 100%;
   height: 400px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -426,21 +495,22 @@ body {
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
+  border: 1px solid #333;
 }
 
 .detail-info h2 {
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #e0e0e0;
 }
 
 .detail-author {
   font-size: 1.2rem;
-  color: #666;
+  color: #999;
   margin-bottom: 0.5rem;
 }
 
 .detail-year {
-  color: #888;
+  color: #777;
   margin-bottom: 1.5rem;
 }
 
@@ -452,9 +522,14 @@ body {
 .detail-description h3,
 .detail-subjects h3 {
   margin-bottom: 0.5rem;
-  color: #333;
-  border-bottom: 1px solid #e1e1e1;
+  color: #e0e0e0;
+  border-bottom: 1px solid #444;
   padding-bottom: 0.25rem;
+}
+
+.detail-description p {
+  color: #b0b0b0;
+  line-height: 1.7;
 }
 
 .subjects-list {
@@ -464,11 +539,12 @@ body {
 }
 
 .subject-tag {
-  background: #667eea;
+  background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.8rem;
+  box-shadow: 0 2px 5px rgba(124, 58, 237, 0.3);
 }
 
 .detail-actions {
@@ -488,22 +564,24 @@ body {
   text-align: center;
   padding: 2rem;
   font-size: 1.1rem;
-  background: white;
+  background: #1f1f1f;
   border-radius: 10px;
   margin-bottom: 1rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
 .error {
-  background: #f8d7da;
-  color: #721c24;
-  border: 1px solid #f5c6cb;
+  background: #2a1a1a;
+  color: #fca5a5;
+  border: 1px solid #7f1d1d;
+  box-shadow: 0 4px 15px rgba(127, 29, 29, 0.3);
 }
 
 .loading {
-  background: #d1ecf1;
-  color: #0c5460;
-  border: 1px solid #bee5eb;
+  background: #1a2a2a;
+  color: #67e8f9;
+  border: 1px solid #164e63;
+  box-shadow: 0 4px 15px rgba(22, 78, 99, 0.3);
 }
 
 /* Responsive Design */
