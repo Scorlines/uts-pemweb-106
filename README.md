@@ -1,8 +1,8 @@
 # Perpustakaan Buku - UTS Pemrograman Web
 
 ## 👤 Identitas
-- **Nama**: [Nama Anda]
-- **NIM**: [NIM Anda]
+- **Nama**: Muhammad Fadhel
+- **NIM**: 123140106
 
 ## 📖 Deskripsi Project
 Aplikasi web perpustakaan buku yang dibangun menggunakan ReactJS dan Vite. Aplikasi ini memungkinkan pengguna untuk mencari buku berdasarkan judul atau penulis menggunakan Open Library API, menampilkan detail buku lengkap, dan menyimpan buku favorit ke dalam daftar bacaan pribadi.
@@ -12,12 +12,13 @@ Aplikasi web perpustakaan buku yang dibangun menggunakan ReactJS dan Vite. Aplik
 - 🎯 Filter buku berdasarkan subjek (Fiksi, Sains, Sejarah, dll)
 - 📚 Daftar bacaan pribadi dengan localStorage
 - 📱 Tampilan responsif untuk semua perangkat
-- 🎨 Background perpustakaan yang aesthetic
+- � Tema dark mode yang elegan
+- �🎨 Background perpustakaan yang aesthetic
 
 ## 🚀 Cara Instalasi dan Menjalankan
 
 ### Prasyarat
-- Node.js
+- Node.js (versi 14 atau lebih baru)
 - npm atau yarn
 
 ### Langkah-langkah:
@@ -48,3 +49,32 @@ Aplikasi web perpustakaan buku yang dibangun menggunakan ReactJS dan Vite. Aplik
 npm run build
 npm run preview
 ```
+## 📸 Screenshot Aplikasi
+
+### 1. Halaman Utama
+![Halaman Utama](./screenshots/screenshot-1.png)
+
+**Penjelasan:** Tampilan awal aplikasi dengan header gradient purple-pink, form pencarian di sidebar kiri yang memungkinkan pencarian berdasarkan judul/penulis dengan filter subjek, dan section "Daftar Bacaan Saya" di bawahnya. Menggunakan tema dark mode dengan background perpustakaan yang aesthetic.
+
+---
+
+### 2. Hasil Pencarian Buku
+![Hasil Pencarian](./screenshots/screenshot-2.png)
+
+**Penjelasan:** Menampilkan 50 hasil pencarian buku dalam grid layout yang responsif. Setiap card buku menampilkan cover, judul, nama penulis, tahun terbit, dan dua tombol aksi: "Lihat Detail" untuk melihat informasi lengkap dan "Tambah ke Daftar" untuk menyimpan ke reading list. Contoh pencarian: "48 laws of power".
+
+---
+
+### 3. Detail Buku (Modal)
+![Detail Buku](./screenshots/screenshot-3.png)
+
+**Penjelasan:** Modal popup yang menampilkan informasi lengkap buku termasuk cover besar, deskripsi detail, dan subjek/kategori buku dalam bentuk tag berwarna. Modal dilengkapi dengan backdrop blur effect dan tombol untuk menambahkan buku ke daftar bacaan atau menutup modal.
+
+---
+
+### 4. Daftar Bacaan dengan Item
+![Daftar Bacaan](./screenshots/screenshot-4.png)
+
+**Penjelasan:** Sidebar "Daftar Bacaan Saya" menampilkan buku-buku yang telah disimpan pengguna. Setiap item menunjukkan thumbnail cover kecil, judul, dan penulis, dengan tombol × merah untuk menghapus dari daftar. Data disimpan di localStorage sehingga tetap tersimpan meskipun browser ditutup.
+
+---
