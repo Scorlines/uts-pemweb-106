@@ -48,10 +48,12 @@ body::before {
   background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
 }
 
-/* Firefox Scrollbar */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #7c3aed #1a1a1a;
+/* Firefox Scrollbar - Modern browsers only */
+@supports (scrollbar-color: auto) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #7c3aed #1a1a1a;
+  }
 }
 
 /* Header Styles */
