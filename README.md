@@ -49,6 +49,14 @@ Aplikasi web perpustakaan buku yang dibangun menggunakan ReactJS dan Vite. Aplik
 npm run build
 npm run preview
 ```
+
+## 🌐 Link Deployment
+🔗 **[Live Demo - Perpustakaan Buku](https://uts-pemweb-106-3yvym5l5t-scorlines-projects.vercel.app)**
+
+Aplikasi sudah di-deploy menggunakan Vercel dan dapat diakses secara online.
+
+---
+
 ## 📸 Screenshot Aplikasi
 
 ### 1. Halaman Utama
